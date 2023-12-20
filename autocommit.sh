@@ -12,7 +12,7 @@
 #####################################################################
 ### Path to your config folder you want to backup
 config_folder=~/printer_data/config
-klipper_folder=~/printer_data/config
+#klipper_folder=~/printer_data/config
 # NOTE: The above should work for just about everyone, but a somewhat
 # recent update to moonraker changed paths, etc. You can run the 
 # provided moonraker script 'data-path-fix.sh' to fix/update
