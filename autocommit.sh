@@ -74,7 +74,7 @@ grab_version(){
 push_config(){
   cd $config_folder
   git init
-  git pull origin $branch --no-rebase
+  git remote add origin https://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@github.com/jeskom1986/vzbot_backup$branch #--no-rebase
   git add -A
   current_date=$(date +"%Y-%m-%d %T")
   git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
