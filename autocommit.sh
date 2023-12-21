@@ -12,7 +12,7 @@
 #####################################################################
 ### Path to your config folder you want to backup
 config_folder=~/printer_data/config
-#klipper_folder=~/printer_data/config
+
 # NOTE: The above should work for just about everyone, but a somewhat
 # recent update to moonraker changed paths, etc. You can run the 
 # provided moonraker script 'data-path-fix.sh' to fix/update
@@ -77,11 +77,7 @@ push_config(){
   git add .
   current_date=$(date +"%Y-%m-%d %T")
   git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
-  git branch master
-
-# add commit
-
-git push origin master
+  git push origin $branch
 }
 
 grab_version
